@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&family=Permanent+Marker&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 120 30% 5%;
+    --foreground: 0 0% 95%;
+    
+    --card: 120 30% 5%;
+    --card-foreground: 0 0% 95%;
+    
+    --popover: 120 25% 10%;
+    --popover-foreground: 0 0% 95%;
+    
+    --primary: 122 39% 49%;
+    --primary-foreground: 0 0% 10%;
+    
+    --secondary: 84 61% 55%;
+    --secondary-foreground: 0 0% 10%;
+    
+    --muted: 120 15% 15%;
+    --muted-foreground: 0 0% 70%;
+    
+    --accent: 84 61% 55%;
+    --accent-foreground: 0 0% 10%;
+    
+    --destructive: 16 100% 50%;
+    --destructive-foreground: 0 0% 95%;
+    
+    --border: 120 15% 20%;
+    --input: 120 15% 20%;
+    --ring: 122 39% 49%;
+    
+    --chart-1: 16 100% 50%;
+    --chart-2: 32 100% 50%;
+    --chart-3: 45 100% 60%;
+    --chart-4: 84 61% 55%;
+    --chart-5: 122 39% 49%;
+
+    --sidebar-background: 120 25% 15%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 122 39% 49%;
+    --sidebar-primary-foreground: 0 0% 10%;
+    --sidebar-accent: 84 61% 55%;
+    --sidebar-accent-foreground: 0 0% 10%;
+    --sidebar-border: 120 15% 25%;
+    --sidebar-ring: 122 39% 49%;
+    
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-body antialiased bg-background text-foreground overflow-x-hidden;
+    cursor: none;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+
+  /* Forest Theme Colors */
+  .bg-forest-dark {
+    @apply bg-[#2C5530];
+  }
+  
+  .bg-forest-light {
+    @apply bg-[#4CAF50];
+  }
+  
+  .bg-forest-accent {
+    @apply bg-[#8BC34A];
+  }
+  
+  .bg-earth-brown {
+    @apply bg-[#7D5A3C];
+  }
+  
+  .bg-earth-dark {
+    @apply bg-[#5D4037];
+  }
+  
+  .bg-earth-light {
+    @apply bg-[#A1887F];
+  }
+  
+  .bg-warning {
+    @apply bg-[#FF5722];
+  }
+  
+  .bg-bark {
+    @apply bg-[#3E363F];
+  }
+  
+  .text-forest-dark {
+    @apply text-[#2C5530];
+  }
+  
+  .text-forest-light {
+    @apply text-[#4CAF50];
+  }
+  
+  .text-forest-accent {
+    @apply text-[#8BC34A];
+  }
+  
+  .text-earth-brown {
+    @apply text-[#7D5A3C];
+  }
+  
+  .text-earth-dark {
+    @apply text-[#5D4037];
+  }
+  
+  .text-earth-light {
+    @apply text-[#A1887F];
+  }
+  
+  .text-warning {
+    @apply text-[#FF5722];
+  }
+  
+  .text-bark {
+    @apply text-[#3E363F];
+  }
+  
+  .font-display {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .font-body {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .font-accent {
+    font-family: 'Permanent Marker', cursive;
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
